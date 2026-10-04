@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人自我介紹</title>
+    <style>
+        /* 基礎全域樣式 */
+        body {
+            font-family: "Microsoft JhengHei", sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 網頁主容器 */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+
+        /* 標題與內文樣式 */
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+        }
+
+        p, li {
+            font-size: 16px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        /* 連結與按鈕 */
+        .btn-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn-link:hover {
+            background-color: #c0392b;
+        }
+
+        /* 旅遊照片展示區 */
+        .trip-gallery {
+            margin-top: 40px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px solid #eef2f5;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .photo-item {
+            background: #fff;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .photo-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 2px;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .photo-item span {
+            font-size: 14px;
+            color: #666;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 網頁大標題 -->
+        <h1>謝麗玲的個人自我介紹</h1>
+
+        <!-- 關於我 -->
+        <h2>關於我</h2>
+        <p>大家好，我的學號是 <strong>114126632</strong></p>
+
+        <!-- 我的興趣 -->
+        <h2>我的興趣</h2>
+        <ul>
+            <li>直播唱歌</li>
+            <li>跳舞</li>
+            <li>出國旅遊</li>
+        </ul>
+
+        <!-- 我的學習目標 -->
+        <h2>我的學習目標</h2>
+        <p>我的學習目標是熟悉 HTML 網頁製作。</p>
+
+        <!-- Youtube 連結按鈕 -->
+        <a href="https://youtube.com" target="_blank" class="btn-link">前往 Youtube</a>
+
+        <!-- 旅遊相簿展示區 -->
+        <div class="trip-gallery">
+            <h2>此趟日本哈利波特影城旅遊</h2>
+            <p>以下是我珍藏的旅遊照片點滴：</p>
+            
+            <div class="photo-grid">
+                <!-- 照片1 -->
+                <div class="photo-item">
+                    <img src="trip01.jpg" alt="旅遊照片01">
+                    <span>trip01</span>
+                </div>
+                <!-- 照片2 -->
+                <div class="photo-item">
+                    <img src="trip02.jpg" alt="旅遊照片02">
+                    <span>trip02</span>
+                </div>
+                <!-- 照片3 -->
+                <div class="photo-item">
+                    <img src="trip03.jpg" alt="旅遊照片03">
+                    <span>trip03</span>
+                </div>
+                <!-- 照片4 -->
+                <div class="photo-item">
+                    <img src="trip05.jpg" alt="旅遊照片05">
+                    <span>trip05</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
